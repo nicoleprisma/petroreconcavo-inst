@@ -1,0 +1,154 @@
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+}
+
+.table-dividendos {
+  tr {
+    th {
+      &.filter {
+        .icon {
+          position: absolute;
+        }
+      }
+    }
+    td {
+      width: 100px;
+      min-width: unset !important;
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  margin-top: 24px;
+
+  thead {
+    tr {
+      background-color: var(--bg-dark);
+
+      &:last-of-type {
+        background-color: var(--text-grey-scale-08);
+      }
+      th {
+        vertical-align: middle;
+        padding: 12px 16px;
+        color: var(--pure-white);
+
+        font-weight: 300;
+        border-bottom: none;
+        text-align: center;
+
+        &:first-of-type {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-of-type(even) {
+        background-color: var(--pure-white);
+      }
+
+      td {
+        text-align: center;
+        vertical-align: middle;
+        border: none;
+        padding: 16px 12px;
+
+        color: var(--text-color);
+        font-style: normal;
+        font-weight: 300;
+        min-width: 100px;
+
+        &.not-active {
+          img {
+            opacity: 0.2;
+          }
+        }
+
+        &:first-of-type {
+          text-align: left;
+        }
+
+        &:not(first-of-type) {
+          min-width: 160px;
+        }
+
+        a {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+.table-accordion-adm {
+  thead {
+    tr {
+      th {
+        &:not(:first-child, :nth-child(2)) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        cursor: pointer;
+      }
+
+      td {
+        &:first-child {
+          span {
+            font-size: rem(30px);
+            color: var(--text-primary-01-var-1);
+          }
+        }
+
+        &:not(:nth-child(2)) {
+          text-align: center;
+        }
+      }
+
+      &.accordion-collapse {
+        td {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.table-central {
+  thead {
+    tr {
+      th {
+        // width: 300px !important;
+
+        @media (max-width: 1462px) {
+          width: 300px !important;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        width: 300px !important;
+      }
+    }
+  }
+
+  img {
+    margin: unset !important;
+  }
+}

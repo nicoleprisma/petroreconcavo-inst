@@ -1,0 +1,25 @@
+[data-theme="dark"] {
+  .logo-client-dark {
+    display: block;
+  }
+
+  .logo-client {
+    display: none;
+  }
+
+  //
+
+  .box-download-fornecedores {
+    img {
+      filter: brightness(10) grayscale(100);
+    }
+  }
+
+  .menu-bar {
+    .navbar-new-menu {
+&::before {
+    background-color: var(--text-grey-scale-00);
+}
+    }
+  }
+}

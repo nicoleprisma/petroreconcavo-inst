@@ -1,0 +1,144 @@
+.headerFixoMenu.not-transparent {
+  .acessibillity-bar {
+    background-color: var(--secondary-2);
+  }
+}
+
+.searchbox-mobile {
+  margin-top: 40px;
+  padding: 0 30px;
+
+  input {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .search-help {
+    padding: 0 20px;
+  }
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.searchbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+
+  transform: translateY(-100%);
+
+  padding: 32px 0;
+
+  background-color: var(--grey-scale-00);
+  transition: transform 0.2s linear;
+
+  &.active {
+    transform: translate(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 6px;
+
+    border-bottom: 1px solid var(--text-grey-scale-02);
+    color: var(--text-white);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+
+      width: 0;
+      height: 1px;
+
+      transition: 0.4s;
+    }
+
+    &.focused-border::after {
+      width: 100%;
+      transition: 0.4s;
+      z-index: 99;
+    }
+
+    .form-control {
+      box-shadow: none;
+
+      border: none;
+      border-radius: 0;
+
+      padding-left: 0;
+      padding-right: 0;
+
+      font-size: 1rem;
+
+      color: var(--text-color);
+      background-color: transparent;
+
+      &::placeholder {
+        color: var(--text-color);
+        font-weight: 300;
+      }
+    }
+
+    .input-group-text {
+      border: none;
+      border-radius: 0;
+
+      background-color: transparent;
+
+      button {
+        border: 0;
+        padding: 0;
+
+        background-color: transparent;
+
+        [class^="icon-"] {
+          display: block;
+
+          &::before {
+            color: var(--text-color);
+            display: block;
+          }
+          transition: color var(--transition);
+        }
+      }
+    }
+  }
+
+  .search-help {
+    small {
+      color: var(--text-grey-scale-06);
+
+      font-size: 0.88rem;
+      font-weight: 300;
+    }
+  }
+
+  .icon-exibir {
+    &:before {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.termos-politica {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  right: 0;
+  left: 0;
+  padding-bottom: 40px;
+  z-index: 2;
+
+  .primary-button {
+    display: block;
+    margin-top: 30px;
+  }
+}

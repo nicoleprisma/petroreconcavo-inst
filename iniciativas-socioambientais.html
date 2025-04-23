@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetroReconcavo</title>
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="shortcut icon" href="images/favicon-152px.png" />
+
+    <link rel="apple-touch-icon" href="images/favicon-120px.png" sizes="120x120" />
+    <link rel="apple-touch-icon" href="images/favicon-152px.png" sizes="152x152" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PetroReconcavo" />
+
+    <meta property="og:description" content="" />
+
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link preload="" rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/basic-table.min.css" />
+    <link rel="stylesheet" href="vendor/slick.min.css" />
+    <link rel="stylesheet" href="vendor/slick-theme.min.css" />
+    <link rel="stylesheet" href="vendor/aos.css" />
+    <link rel="stylesheet" href="css/import.dist.min.css" />
+    <script src="vendor/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="headerFixoMenu">
+        <div class="topbar">
+            <div class="container ">
+                <div class="itens">
+                    <div class="links-topo">
+                        <span>
+                            Institucional
+                        </span>
+                        <span>|</span>
+                        <a class="link-inst" href="https://iguatemi.com.br/" target="_blank">
+                            <span>
+                                Relações com Investidores
+                            </span>
+                            <img src="images/link-externo.svg" alt="Acessar site Institucional">
+                        </a>
+                    </div>
+
+                    <div class="accessibility-bar">
+                        <div class="accessibility-tools">
+                            <a href="./acessibilidade">Acessibilidade</a>
+
+                            <button id="contrastToggle" aria-label="Contraste" type="button" class="tool"
+                                data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title=""
+                                data-bs-original-title="Contraste">
+                                <span class="icon-contraste"></span>
+                            </button>
+
+                            <button id="increaseFont" aria-label="Aumentar fonte" type="button" class="tool"
+                                data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title=""
+                                data-bs-original-title="Aumentar o tamanho da fonte">
+                                <span class="icon-aumentar-fonte" accesskey="4"></span>
+                            </button>
+
+                            <button id="decreaseFont" aria-label="Diminuir fonte" type="button" class="tool"
+                                data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title=""
+                                data-bs-original-title="Diminuir o tamanho da fonte">
+                                <span class="icon-diminuir-fonte" accesskey="5"></span>
+                            </button>
+                        </div>
+
+                        <div class="idioma-itens">
+                            <a id="hlkCulturaPtBr" accesskey="7" class="idioma-on" href="">
+                                PT
+                            </a>
+                            <a id="hlkCulturaEnUS" accesskey="8" href="">
+                                EN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="container ">
+                <div class="navbar navbar-expand-lg navbar-new-menu">
+                    <div class="logo-enterprise">
+                        <a href="/">
+                            <img class="logo-client" src="images/logo-client.svg" alt="PetroReconcavo">
+                            <img class="logo-client-dark" src="images/logo-client-dark.svg" alt="PetroReconcavo">
+                        </a>
+
+                        <button class="navbar-toggler btn-open-menu collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <img src="images/mobile-menu-icon.svg" alt="Abrir menu mobile">
+                        </button>
+                    </div>
+                    <div class="canais-menu">
+                        <div class="container-before-mobile">
+                            <div class="container ">
+                                <div class="content-menu-mobile">
+
+                                    <div class="logo-mobile">
+                                        <a href="/">
+                                            <img class="logo-client" src="images/logo-client.svg" alt="PetroReconcavo">
+                                        </a>
+                                    </div>
+
+                                    <button class="navbar-toggler btn-open-menu" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <img src="images/mobile-menu-icon.svg" alt="Abrir menu mobile">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="collapse navbar-collapse mobile-nav-size" id="navbarNav">
+
+                                <div class="searchbox-mobile">
+
+                                    <div class="row">
+                                        <div class="offset-xl-0 col-xl-12">
+                                            <div class="input-group">
+                                                <input name="ctl00$ctl71" type="text" class="form-control inputBusca"
+                                                    placeholder="Digite aqui sua busca">
+                                            </div>
+
+                                            <div class="search-help">
+                                                <small>
+                                                    Aperte Enter para pesquisar
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown mobile-accordion-item">
+                                        <a class="nav-link dropdown-toggle mobile-accordion-button" href="#"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Nossas operações
+                                        </a>
+                                        <ul class="dropdown-menu mobile-accordion-content">
+                                            <li><a href="/quem-somos.html" class="dropdown-item">Quem Somos</a></li>
+                                            <li> <a href="/ativos-ba-rn.html" class="dropdown-item">Ativos BA e RN</a>
+                                            </li>
+                                            <li><a href="/sondas-e-servicos.html" class="dropdown-item">Sondas e
+                                                    Serviços</a>
+                                            </li>
+                                            <li><a href="/gas.html" class="dropdown-item">Gás</a>
+                                            </li>
+                                            <li><a href="/nossa-historia.html" class="dropdown-item">Nossa História</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown mobile-accordion-item">
+                                        <a class="nav-link dropdown-toggle mobile-accordion-button" href="#"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Nossa gente
+                                        </a>
+                                        <ul class="dropdown-menu mobile-accordion-content">
+                                            <li>
+                                                <a href="/nosso-jeito.html" class="dropdown-item">Nosso jeito PR</a>
+                                            </li>
+                                            <li>
+                                                <a href="/vagas.html" class="dropdown-item">Vagas</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown mobile-accordion-item">
+                                        <a class="nav-link dropdown-toggle mobile-accordion-button" href="#"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            ESG
+                                        </a>
+                                        <ul class="dropdown-menu mobile-accordion-content">
+                                            <li>
+                                                <a href="/iniciativas-socioambientais.html"
+                                                    class="dropdown-item">Iniciativas
+                                                    Socioambientais</a>
+                                            </li>
+                                            <li>
+                                                <a href="/apresentacoes.html" class="dropdown-item">Apresentações</a>
+                                            </li>
+                                            <li><a href="/relatorios-de-sustentabilidade.html"
+                                                    class="dropdown-item">Relatórios de Sustentabilidade</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown mobile-accordion-item">
+                                        <a class="nav-link dropdown-toggle mobile-accordion-button"
+                                            href="/noticias.html" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Relações com Investidores
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item dropdown mobile-accordion-item">
+                                        <a class="nav-link dropdown-toggle mobile-accordion-button"
+                                            href="/noticias.html" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Notícias
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item dropdown mobile-accordion-item">
+                                        <a class="nav-link dropdown-toggle mobile-accordion-button" href="#"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Fale conosco
+                                        </a>
+                                        <ul class="dropdown-menu mobile-accordion-content">
+                                            <li>
+                                                <a href="/ouvidoria.html" class="dropdown-item">Ouvidoria</a>
+                                            </li>
+                                            <li>
+                                                <a href="/canal-de-transparencia.html" class="dropdown-item">Canal de
+                                                    Transparência</a>
+                                            </li>
+                                            <li>
+                                                <a href="/fornecedores.html" class="dropdown-item">Fornecedores</a>
+                                            </li>
+
+                                            <li><a href="/assessoria.html" class="dropdown-item">Assessoria de
+                                                    Imprensa</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="/informacoes.html" class="dropdown-item">Informações sobre
+                                                    Tratamento de
+                                                    Dados Pessoais</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <div class="links-uteis-mobile">
+                                    <p><b>Links úteis</b></p>
+                                    <ul>
+                                        <li>
+                                            <a href="#">A PetroReconcavo</a>
+                                        </li>
+
+                                        <li>
+                                            <a href=#">Programa de Integridade</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Fornecedores</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Projetos Sociais</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Comercialização de gás</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <button aria-label="Busca" type="button" class="open-searchbox" data-bs-toggle="tooltip"
+                        data-bs-trigger="hover" data-bs-placement="bottom" accesskey="2" title=""
+                        data-bs-original-title="Pesquisar">
+                        <i class="icon-busca"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="searchbox">
+        <div class="container ">
+            <div class="row">
+                <div class="offset-xl-0 col-xl-12">
+                    <div class="input-group">
+                        <input name="ctl00$ctl71" type="text" class="form-control inputBusca"
+                            placeholder="Digite aqui a sua busca">
+
+                        <div class="input-group-text">
+                            <button type="button" class="close-searchbox" aria-label="Fechar Modal de Pesquiasr">
+                                <span class="icon-exibir"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="search-help">
+                        <small>
+                            Aperte Enter para pesquisar
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="header-interno" style="background-image:url(./images/header-interno.webp);">
+        <div class="container container-responsivo-full-content">
+            <div class="info-header-interno">
+                <h1 class="header-title">
+                    Iniciativas Socioambientais
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h2 data-aos="fade-up">Iniciativas e Projetos Socioambientais</h2>
+                    <h3 class="pt-0" data-aos="fade-up">Acreditamos em um modelo econômico mais inclusivo e sustentável,
+                        focado em
+                        proporcionar bem-estar para todos.</h3>
+                    <p data-aos="fade-up" data-aos-delay="100">Trabalhamos com uma consciência social que visa despertar
+                        nas pessoas suas potencialidades como
+                        indivíduos e cidadãos,
+                        promovendo um futuro mais justo e equilibrado para todos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-iniciativas" style="background-image: url(/images/bg-iniciativas.jpg);">
+        <div class="container">
+            <h6 data-aos="fade-up">Reutilização de <span>100%</span> da água da produção, promovendo sustentabilidade.
+            </h6>
+            <h6 data-aos="fade-up" data-aos-delay="100">Uso de desengraxante biodegradável no lugar de querosene,
+                reduzindo o impacto ambiental.</h6>
+            <h6 data-aos="fade-up" data-aos-delay="200">Parceria com a Fundação Projeto Tamar, apoiando a conservação
+                ambiental.</h6>
+            <h6 data-aos="fade-up" data-aos-delay="300"><span>R$ 1,34</span> bilhão em compras de fornecedores da Bahia
+                e do Rio Grande do Norte.</h6>
+            <h6 data-aos="fade-up" data-aos-delay="400"><span>R$ 2,76</span> milhões de investimento em projetos
+                sociais.</h6>
+            <h6 data-aos="fade-up" data-aos-delay="500"><span>2,5X</span> de aumento de impacto dos programas sociais -
+                o número de pessoas impactadas direta e
+                indiretamente passou de 4.256 para 10.637.</h6>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 data-aos="fade-up">Iniciativas Ambientais</h2>
+
+            <div class="box-iniciativas">
+                <div class="item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text">
+                        <h3>Emissões</h3>
+                        <p>Estamos comprometidos com a gestão ambiental responsável. Monitoramos as emissões de Gases de
+                            Efeito Estufa (GEE) em
+                            nossas unidades na Bahia, Sergipe e Rio Grande do Norte, seguindo rigorosamente os conceitos
+                            e diretrizes do Programa
+                            Brasileiro do GHG Protocol e da ISO 14064-1.</p>
+
+                        <p>Esse esforço faz parte do nosso compromisso contínuo em reduzir impactos ambientais e
+                            promover práticas sustentáveis que
+                            contribuem para um futuro mais verde e responsável.</p>
+                    </div>
+                    <img src="images/emissoes.jpg" alt="Emissões">
+                </div>
+
+                <div class="item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/residuos.jpg" alt="Resíduos">
+                    <div class="text">
+                        <h3>Resíduos</h3>
+                        <p>A maior parte dos resíduos gerados pela Companhia provém das atividades de operação,
+                            manutenção e perfuração de novos
+                            poços. Todos os resíduos são rigorosamente gerenciados de acordo com a distribuição
+                            geográfica dos campos de produção,
+                            garantindo sua rastreabilidade. As principais fontes de impacto estão nas atividades de
+                            perfuração e produção.</p>
+
+                        <p>Para mitigar esses impactos, implementamos diversas medidas de prevenção, como reciclagem e
+                            reutilização de materiais,
+                            gerenciamento eficiente dos resíduos e treinamentos contínuos para nossa equipe. Além disso,
+                            buscamos garantir a
+                            conformidade com a legislação ambiental vigente, promovendo práticas que reduzam a geração
+                            de resíduos e aumentem a
+                            sustentabilidade de nossas operações.</p>
+                    </div>
+                </div>
+                <div class="item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text">
+                        <h3>Gestão hídrica e efluentes</h3>
+                        <p>Adotamos práticas responsáveis na gestão da água, utilizando fontes como abastecimento
+                            público, poços artesianos e águas
+                            residuais tratadas para reuso. A água é essencial para diversas operações, como injeção de
+                            poços, limpeza, sanitários,
+                            combate a incêndios e em refeitórios e cozinhas.</p>
+
+                        <p>Priorizamos a reutilização da água, especialmente com a reinjeção no reservatório, reduzindo
+                            o consumo de água potável.
+                            Os efluentes domésticos são tratados em unidades apropriadas, seguindo padrões de legislação
+                            e regulamentação.</p>
+                    </div>
+                    <img src="images/gestao-hidrica.jpg" alt="Gestão hídrica e efluentes">
+                </div>
+
+                <div class="item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images/biodiversidade.jpg" alt="Biodiversidade">
+                    <div class="text">
+                        <h3>Biodiversidade</h3>
+                        <p>Atuamos na proteção de espécies ameaçadas de tartarugas marinas na Estação Coletora de
+                            Tartaruga, nossa unidade em
+                            Pirambu (SE), que está localizada nos arredores da Reserva Biológica de Santa Isabel.</p>
+
+                        <p>Criada para proteger espécies ameaçadas de tartarugas marinhas, nossa reserva é uma das
+                            maiores áreas de desova do país,
+                            abrangendo 4,1 mil hectares. A área está devidamente listada em legislação nacional de
+                            proteção ambiental, reforçando o
+                            compromisso com a conservação da biodiversidade.</p>
+
+                        <p>A operação da PetroReconcavo no local se limita a um escritório e atividades operacionais em
+                            uma área de 0,01 quilômetro
+                            quadrado, minimizando impactos ambientais e garantindo a preservação do ecossistema local.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray">
+        <div class="container">
+            <h2 data-aos="fade-up">Projetos Sociais</h2>
+
+            <h3>Programa Viva Sabiá – RN</h3>
+
+            <div class="grid-text">
+                <div class="item" data-aos="fade-up" data-aos-delay="100">
+                    <p>O projeto desenvolve diversas soluções inovadoras para comunidades no semiárido, incluindo a
+                        construção de cisternas
+                        para captação de água da chuva e a instalação do Aqualuz, um dispositivo que purifica a água por
+                        meio da radiação solar.
+                        Além disso, o projeto implementa o Bioágua, uma tecnologia social para o reuso de águas cinzas
+                        domésticas (como de pias,
+                        tanques e chuveiros) na agricultura, promovendo a convivência sustentável com o semiárido.</p>
+                </div>
+
+                <div class="item" data-aos="fade-up" data-aos-delay="200">
+                    <p>Outro foco importante é o trabalho educativo e de empreendedorismo, capacitando a população local
+                        para a comercialização
+                        de produtos e impulsionando a geração de renda. A próxima fase do projeto visa expandir a
+                        comercialização dessas
+                        produções para aumentar a renda das famílias.</p>
+                </div>
+            </div>
+
+            <div id="carouselProjetos1" class="carousel slide carousel-projetos projeto-viva-sabia" data-aos="fade-up" data-aos-delay="300">
+
+                <div class="carousel-controls">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProjetos1" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselProjetos1" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselProjetos1" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/viva-sabia-01.jpg" alt="Banner 01">
+                        <div class="carousel-caption">
+                            <h4>Resultados e Impacto Social:</h4>
+                            <h5>Número total de beneficiários: 569 pessoas, com 240 beneficiados em 2022, 317 em 2023 e
+                                12 em 2024.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/viva-sabia-02.jpg" alt="Banner 02">
+                        <div class="carousel-caption">
+                            <h4>Resultados e Impacto Social:</h4>
+                            <h5>Total de tecnologias aplicadas: 222 tecnologias, sendo 220 em domicílios e 2 em escolas.
+                                Em 2022, foram aplicadas 61
+                                tecnologias, e em 2023, mais 161 (30 Bioágua, 81 cisternas e 111 Aqualuz). Em 2024, o
+                                foco foi a manutenção das
+                                tecnologias existentes e a capacitação em geração de renda.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/viva-sabia-03.jpg" alt="Banner 03">
+                        <div class="carousel-caption">
+                            <h4>Resultados e Impacto Social:</h4>
+                            <h5>Aqualuz: cada R$ 1,00 investido gerou um retorno social de R$ 19,59, evitando custos com
+                                tratamentos de saúde e evasão
+                                escolar por doenças.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-text">
+                <div class="item">
+                    <h3 class="pt-0" data-aos="fade-up">Projeto Ciranda Viva Reconcavo - BA</h3>
+                    <p data-aos="fade-up" data-aos-delay="100">O primeiro projeto social da PetroReconcavo tem como objetivo acompanhar crianças e adolescentes
+                        de comunidades
+                        vulneráveis ao longo de sua infância e adolescência. Criado em parceria com a AVSI Brasil, o
+                        programa visa promover o
+                        desenvolvimento sustentável das comunidades, valorizando a cultura e a identidade locais. O
+                        projeto foi implementado nas
+                        comunidades de Pedras, Flechas e Veadinhos, no município de Catu (BA). Em 2023, o projeto
+                        beneficiou 173 crianças e
+                        adolescentes, impactando indiretamente 518 pessoas em suas famílias.</p>
+                </div>
+            </div>
+
+            <div id="carouselProjetos2" class="carousel slide carousel-projetos projetos-ciranda" data-aos="fade-up" data-aos-delay="300">
+
+                <div class="carousel-controls">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProjetos2" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselProjetos2" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselProjetos2" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/projeto-ciranda-01.jpg" alt="Banner 01">
+                        <div class="carousel-caption">
+                            <h4>Principais Linhas de Atuação do Projeto:</h4>
+                            <h5>Ciranda Esportiva: o objetivo dessa iniciativa é estimular o interesse por práticas
+                                esportivas e contribuir para a
+                                socialização dos participantes fora do ambiente escolar. Em 2023, crianças e
+                                adolescentes com idades entre 7 e 17 anos
+                                participaram das atividades.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/projeto-ciranda-02.jpg" alt="Banner 02">
+                        <div class="carousel-caption">
+                            <h4>Principais Linhas de Atuação do Projeto:</h4>
+                            <h5>Ciranda Educativa: focada na educação ambiental e segurança alimentar, essa ação
+                                trabalha com crianças da primeira
+                                infância (entre 4 e 6 anos), incentivando o cultivo de hortas e mostrando a importância
+                                do trabalho agrícola.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/projeto-ciranda-03.jpg" alt="Banner 03">
+                        <div class="carousel-caption">
+                            <h4>Principais Linhas de Atuação do Projeto:</h4>
+                            <h5>Ciranda da Leitura: atende os beneficiários das linhas Ciranda Educativa e Ciranda
+                                Esportiva, oferecendo oficinas
+                                pedagógicas de leitura e produção textual. Em 2023, o modelo de apadrinhamento foi
+                                repetido, com colaboradores fazendo
+                                doações mensais e a PetroReconcavo contribuindo com o mesmo valor como contrapartida.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bg-green">
+
+            <div class="ouvipetro">
+                <div class="text">
+                    <span>Tem algum sugestão ou crítica?</span>
+                    <h2>OuviPetro</h2>
+                </div>
+                <div class="text">
+                    <span>Ligue:</span>
+                    <h2>0800 071 8028</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="item">
+                        <div class="endereco">
+                            <span>Salvador - Hangar</span>
+
+                            <p>(escritório corporativo)<br>
+                                Av. Luís Viana, Hangar Business Park, Torre 3, 4˚ andar.<br>
+                                Salvador - Bahia - Brasil<br>
+                                CEP: 41500-300<br>
+                                Telefone (71) 3635-0296</p>
+                        </div>
+
+                        <div class="endereco">
+                            <span>Estação São Roque</span>
+
+                            <p>(Base Operacional Distrito Recôncavo)<br>
+                                Estrada do Vinte Mil, Km 3,5<br>
+                                Estação São Roque Mata de São João - Bahia - Brasil<br>
+                                CEP: 48280-000<br>
+                                Telefone: (71) 3635-0200</p>
+                        </div>
+
+                        <div class="endereco">
+                            <span>Estação São Roque</span>
+
+                            <p>(Administrativo Distrito Potiguar)<br>
+                                Avenida Lauro Monte, 1010, Abolição - Mossoró/RN<br>
+                                CEP: 59619-000</p>
+                        </div>
+
+                        <div class="endereco">
+                            <span>Estação Riacho da Forquilha</span>
+
+                            <p>(Base Operacional Distrito Potiguar)<br>
+                                Campo Riacho da Forquilha, Área Rural.<br>
+                                Apodi - RN<br>
+                                CEP: 59700-000</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span>Links úteis</span>
+
+                        <ul>
+                            <li>
+                                <a href="#">A PetroReconcavo</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Programa de Integridade</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Fornecedores</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Projetos Sociais</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Comercialização de gás</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <p>PetroReconcavo © Todos os direitos reservados 2025</p>
+
+                    <ul class="links-meio">
+                        <li>
+                            <a href="#">Relações com Investidores</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Código de Conduta</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Termos e Condições</a>
+                        </li>
+                    </ul>
+
+                    <div class="selo-prisma">
+                        <img src="images/logo-prisma.png" alt="Prisma">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container ">
+                <div class="content">
+                    <div class="iframe-cotacoes">
+                        <p>Preço do gás</p>
+
+                        <div class="item">
+                            <span class="title">Guamaré (RN):</span>
+                            <img src="images/icon-gas.svg" alt="Preço do gás">
+                            <span class="data">09/07</span>
+                            <span><b>R$ 2.828,01</b></span>
+                            <span>(LCT)</span>
+                        </div>
+
+                        <div class="item">
+                            <span class="title">Guamaré (RN):</span>
+                            <img src="images/icon-gas.svg" alt="Preço do gás">
+                            <span class="data">09/07</span>
+                            <span><b>R$ 2.828,01</b></span>
+                            <span>(LPA)</span>
+                        </div>
+                    </div>
+
+                    <div class="tabela-cotacoes">
+                        <a href="#">Confira a tabela completa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/carrosel.js"></script>
+    <script defer src="vendor/bootstrap.bundle.min.js"></script>
+    <script defer src="vendor/counterup.js"></script>
+    <script defer src="vendor/menuFixo.js"></script>
+    <script defer src="vendor/aos.js"></script>
+    <script defer src="vendor/basic-table.min.js"></script>
+    <script defer src="vendor/slick.min.js"></script>
+    <script defer src="js/zoomScroll.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/Master.js"></script>
+</body>
+
+</html>

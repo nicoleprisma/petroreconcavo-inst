@@ -1,0 +1,187 @@
+.btn-border,
+.btn-green {
+  box-shadow: none;
+
+  border: 1px solid;
+  border-radius: 2px;
+
+  padding: 10px 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: rem(16);
+  font-weight: 600;
+  line-height: rem(24.8);
+
+  text-align: center;
+  text-decoration: none;
+
+  transition: color 0.3s ease-out, background-color 0.3s ease-out,
+    border-color 0.3s ease-out !important;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1) !important;
+
+  &:disabled {
+    cursor: not-allowed;
+
+    border-color: var(--system-disabled);
+    color: var(--text-white);
+    background-color: var(--system-disabled);
+
+    &:hover,
+    &:focus {
+      border-color: inherit;
+      color: inherit;
+      background-color: inherit;
+    }
+  }
+}
+
+.btn-border {
+  border: 1px solid var(--text-primary-01-var-06);
+  margin-top: 24px;
+  color: var(--text-primary-01-var-06);
+  background: transparent;
+  border-radius: 50px;
+  font-weight: 400;
+  transition: 0.3s !important;
+  width: fit-content !important;
+  padding: 10px 22px;
+  display: block;
+  font-size: rem(18);
+
+  &:hover {
+    border: 1px solid var(--text-primary-01-var-05);
+    color: var(--text-primary-01-var-05);
+    transition: 0.3s !important;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    border-color: var(--system-disabled);
+    color: var(--text-white);
+    background-color: var(--system-disabled);
+
+    &:hover,
+    &:focus {
+      border-color: inherit;
+      color: inherit;
+      background-color: inherit;
+    }
+  }
+}
+
+.btn-green {
+  border: 1px solid var(--text-primary-01-var-06);
+  margin-top: 24px;
+  color: var(--text-grey-scale-00);
+  background: var(--primary-01-var-06);
+  border-radius: 50px;
+  font-weight: 400;
+  transition: 0.3s !important;
+  width: fit-content !important;
+  padding: 10px 22px;
+  display: block;
+  font-size: rem(18);
+
+  &:hover {
+    border: 1px solid var(--text-primary-01-var-05);
+    background: var(--primary-01-var-05);
+    color: var(--text-grey-scale-00);
+    transition: 0.3s !important;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    border-color: var(--system-disabled);
+    color: var(--text-white);
+    background-color: var(--system-disabled);
+
+    &:hover,
+    &:focus {
+      border-color: inherit;
+      color: inherit;
+      background-color: inherit;
+    }
+  }
+}
+
+.btn-yellow {
+  border: 1px solid var(--text-primary-02-var-06);
+  margin-top: 24px;
+  color: var(--text-grey-scale-10);
+  background: var(--primary-02-var-06);
+  border-radius: 50px;
+  font-weight: 400;
+  transition: 0.3s !important;
+  width: fit-content !important;
+  padding: 10px 22px;
+  display: block;
+  font-size: rem(18);
+  text-decoration: none;
+
+  &:hover {
+    border: 1px solid var(--text-primary-02-var-05);
+    background: var(--primary-02-var-05);
+    color: var(--text-grey-scale-10);
+    transition: 0.3s !important;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    border-color: var(--system-disabled);
+    color: var(--text-white);
+    background-color: var(--system-disabled);
+
+    &:hover,
+    &:focus {
+      border-color: inherit;
+      color: inherit;
+      background-color: inherit;
+    }
+  }
+}
+
+.btn-gray {
+  border: 1px solid var(--grey-scale-01);
+  margin-top: 24px;
+  color: var(--grey-scale-10);
+  background: var(--text-grey-scale-01);
+  border-radius: 50px;
+  font-weight: 400;
+  transition: 0.3s !important;
+  width: fit-content !important;
+  padding: 10px 22px;
+  display: block;
+  font-size: rem(18);
+  text-decoration: none;
+
+  &:hover {
+    border: 1px solid var(--text-grey-scale-02);
+    background: var(--grey-scale-02);
+    color: var(--text-grey-scale-10);
+    transition: 0.3s !important;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    border-color: var(--system-disabled);
+    color: var(--text-white);
+    background-color: var(--system-disabled);
+
+    &:hover,
+    &:focus {
+      border-color: inherit;
+      color: inherit;
+      background-color: inherit;
+    }
+  }
+}
+
+
+

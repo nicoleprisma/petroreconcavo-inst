@@ -1,0 +1,79 @@
+.form {
+  .content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    .form-control {
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      background: none;
+      border-bottom: 1px solid var(--text-grey-scale-08);
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      padding: 8px 15px;
+      font-weight: 300;
+      color: var(--text-color);
+      border-radius: 0;
+
+      &::placeholder {
+        font-weight: 300;
+        color: var(--text-color);
+      }
+
+      &:focus {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 1px solid var(--text-grey-scale-08);
+        outline: 0;
+
+        &::placeholder {
+          color: var(--text-grey-scale-04);
+        }
+      }
+    }
+  }
+
+  .idioma {
+    display: flex;
+    gap: 8px;
+
+    .pt,
+    .en {
+      display: flex;
+      gap: 10px;
+      flex-direction: row-reverse;
+    }
+  }
+
+  .aviso {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 0;
+    justify-content: flex-end;
+
+    @media (max-width: 991px) {
+      align-items: center;
+    }
+  }
+
+  label {
+    font-weight: 300;
+    font-size: 0.88rem;
+  }
+}

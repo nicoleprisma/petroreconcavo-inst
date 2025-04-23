@@ -1,0 +1,224 @@
+.pt-112 {
+  padding-top: 112px;
+}
+
+.pb-112 {
+  padding-bottom: 112px;
+}
+
+.pr-16 {
+  padding-right: 16px;
+}
+
+.pl-16 {
+  padding-left: 16px;
+}
+
+.pt-24 {
+  padding-top: 24px;
+}
+
+.pb-24 {
+  padding-bottom: 24px;
+}
+
+.pr-24 {
+  padding-right: 24px;
+}
+
+.pl-24 {
+  padding-left: 24px;
+}
+
+.pt-32 {
+  padding-top: 32px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pt-56 {
+  padding-top: 56px;
+}
+
+.pb-56 {
+  padding-bottom: 56px;
+}
+
+.pt-64 {
+  padding-top: 64px;
+}
+
+.pb-64 {
+  padding-bottom: 64px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.pt-146 {
+  padding-top: 146px;
+}
+
+.pb-146 {
+  padding-bottom: 146px;
+}
+
+.padding-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.padding-56 {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mb-56 {
+  margin-bottom: 56px !important;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mt-64 {
+  margin-top: 64px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mb-90 {
+  margin-bottom: 90px !important;
+}
+
+.mw-800px {
+  max-width: 800px;
+}
+
+/* Mobile */
+
+.border-bottom {
+  border: none !important;
+}
+
+// Width
+
+.mx-592px {
+  max-width: 592px;
+}
+
+.mx-696px {
+  max-width: 696px;
+}
+
+.mx-800px {
+  max-width: 800px;
+}
+
+img-comparison-slider {
+  outline: none !important;
+  border-radius: 2px;
+
+  img {
+    object-fit: cover;
+    height: 493px;
+
+    @media (max-width: 991px) {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    height: 300px;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.bg-gray {
+  background-color: var(--grey-scale-01);
+}
+
+.bg-white {
+  background-color: var(--grey-scale-00) !important;
+}
+
+.bg-green,
+.section-esg-integridade {
+  background-color: var(--primary-01-var-06);
+}
+
+.swiper-arrows {
+  .swiper-button-prev {
+    &:after {
+      content: url(/images/arrow-slide.svg);
+      transform: rotate(180deg);
+    }
+  }
+
+  .swiper-button-next {
+    &:after {
+      content: url(/images/arrow-slide.svg);
+    }
+  }
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+
+.radius-8 {
+  border-radius: 8px;
+}

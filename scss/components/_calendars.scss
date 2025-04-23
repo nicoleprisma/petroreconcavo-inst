@@ -1,0 +1,466 @@
+.nav-calendario {
+  padding: 0;
+  max-width: 230px;
+  margin: 0 auto;
+
+  .slick-list {
+    padding: 0 !important;
+
+    li {
+      text-align: center;
+      color: var(--text-primary-01-var-01);
+      font-size: rem(18);
+    }
+  }
+
+  .slick-arrow {
+    top: 39%;
+
+    &::before {
+      content: "";
+      font-family: var(--font-icomoon);
+      color: var(--text-primary-01-var-01);
+      font-size: rem(28);
+    }
+  }
+
+  .slick-next {
+    &::before {
+      content: "\e909";
+    }
+  }
+  .slick-prev {
+    &::before {
+      content: "\e908";
+    }
+  }
+}
+
+.ui-datepicker-header {
+  padding: 8px 15px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 1px solid var(--text-grey-scale-02);
+  margin-bottom: 8px;
+
+  .ui-corner-all {
+    display: flex;
+    align-items: center;
+
+    .ui-icon {
+      height: 21px;
+      width: 20px;
+      display: block;
+
+      &::after {
+        content: url("../images/icon-arrow.svg");
+        display: block;
+        height: 21px;
+      }
+    }
+
+    &.ui-datepicker-prev {
+      .ui-icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    &.ui-datepicker-next {
+      order: 3;
+    }
+  }
+
+  .ui-datepicker-title {
+    text-align: center;
+
+    span {
+      font-size: 1.5rem;
+
+      font-weight: 300;
+
+      &:nth-child(1) {
+        &::after {
+          content: " / ";
+        }
+      }
+    }
+  }
+}
+
+.ui-datepicker-calendar {
+  width: 100%;
+
+  thead {
+    border: 1px solid var(--text-grey-scale-02);
+
+    th {
+      background-color: var(--text-grey-scale-01);
+      color: var(--grey-scale-08);
+
+      font-size: 1rem;
+      font-weight: 300;
+      padding: 20px 8px;
+      text-align: center;
+    }
+  }
+
+  tbody {
+    td {
+      padding: 8px 25px;
+      width: 81px;
+      height: 64px;
+      border: 1px solid var(--text-grey-scale-02);
+      background-color: var(--pure-white);
+
+      @media (max-width: 1659px) {
+        padding: 8px 20px;
+      }
+
+      @media (max-width: 1359px) {
+        padding: 8px 15px;
+      }
+
+      @media (max-width: 1199px) {
+        padding: 8px 10px;
+      }
+
+      @media (max-width: 991px) {
+        padding: 8px 25px;
+      }
+
+      @media (max-width: 767px) {
+        padding: 8px 13px;
+      }
+
+      @media (max-width: 575px) {
+        padding: 0;
+      }
+
+      a {
+        color: var(--text-color);
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: default;
+
+        &.ui-state-active {
+          background-color: var(--bg-dark);
+          border: 1px solid var(--text-color);
+          color: var(--text-white);
+          font-weight: 400;
+          border-radius: 50px;
+          cursor: pointer;
+          position: relative;
+
+          .marcador {
+            display: flex;
+            gap: 3px;
+            position: absolute;
+            bottom: -5px;
+
+            .pink {
+              width: 8px;
+              height: 8px;
+              background-color: #d861c0;
+              border-radius: 30px;
+              display: none;
+
+              &.active {
+                display: block;
+              }
+            }
+
+            .yellow {
+              width: 8px;
+              height: 8px;
+              background-color: #d8a961;
+              border-radius: 30px;
+              display: none;
+
+              &.active {
+                display: block;
+              }
+            }
+
+            .green {
+              width: 8px;
+              height: 8px;
+              background-color: #61d86d;
+              border-radius: 30px;
+              display: none;
+
+              &.active {
+                display: block;
+              }
+            }
+
+            .purple {
+              width: 8px;
+              height: 8px;
+              background-color: #6361d8;
+              border-radius: 30px;
+              display: none;
+
+              &.active {
+                display: block;
+              }
+            }
+
+            .acqua {
+              width: 8px;
+              height: 8px;
+              background-color: #46e6be;
+              border-radius: 30px;
+              display: none;
+
+              &.active {
+                display: block;
+              }
+            }
+          }
+
+          @media (max-width: 575px) {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.date-calendar {
+  color: var(--text-grey-scale-05);
+  font-size: 1rem;
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+
+.flex-calendar {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.text-list-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-calendar {
+  font-size: 1rem;
+  color: var(--text-grey-scale-05);
+}
+
+.date-event {
+  display: flex;
+  gap: 8px;
+
+  span {
+    color: var(--text-grey-scale-05);
+    font-size: 1rem;
+    margin-bottom: 4px;
+    font-weight: 400;
+  }
+}
+
+.buttons-exportar {
+  display: flex;
+  gap: 8px;
+
+  span {
+    display: none;
+    //por enquanto
+  }
+
+  img {
+    width: 40px;
+  }
+}
+
+.legendas-calendario {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  span {
+    font-weight: 300;
+    font-size: 0.75rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:nth-of-type(1) {
+      &::before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #d861c0;
+        border-radius: 30px;
+        margin-right: 3px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      &::before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #d8a961;
+        border-radius: 30px;
+        margin-right: 3px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      &::before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #61d86d;
+        border-radius: 30px;
+        margin-right: 3px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      &::before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #6361d8;
+        border-radius: 30px;
+        margin-right: 3px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      &::before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #46e6be;
+        border-radius: 30px;
+        margin-right: 3px;
+      }
+    }
+  }
+}
+
+.popover {
+  min-width: 313px;
+  background: transparent;
+  border: none;
+
+  .popover-arrow {
+    display: none;
+  }
+
+  .item-evento {
+    background-color: #fff;
+    border: 1px solid var(--text-grey-scale-03);
+    padding: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &:not(:last-of-type) {
+      margin-bottom: 5px;
+    }
+
+    &.item-pink {
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background-color: #d861c0;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &.item-yellow {
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background-color: #d8a961;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &.item-green {
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background-color: #61d86d;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &.item-purple {
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background-color: #6361d8;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &.item-acqua {
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background-color: #46e6be;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    .data {
+      color: var(--text-grey-scale-0);
+    }
+
+    p {
+      font-weight: 500;
+    }
+
+    .horario {
+      font-size: 0.75rem;
+      color: var(--text-grey-scale-05);
+    }
+  }
+}

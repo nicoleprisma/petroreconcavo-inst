@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetroReconcavo</title>
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="shortcut icon" href="images/favicon-152px.png" />
+
+    <link rel="apple-touch-icon" href="images/favicon-120px.png" sizes="120x120" />
+    <link rel="apple-touch-icon" href="images/favicon-152px.png" sizes="152x152" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PetroReconcavo" />
+
+    <meta property="og:description" content="" />
+
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link preload="" rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/basic-table.min.css" />
+    <link rel="stylesheet" href="vendor/slick.min.css" />
+    <link rel="stylesheet" href="vendor/slick-theme.min.css" />
+    <link rel="stylesheet" href="vendor/aos.css" />
+    <link rel="stylesheet" href="css/import.dist.min.css" />
+    <script src="vendor/jquery.min.js"></script>
+    
+</head>
+
+<body>
+
+    <div class="headerFixoMenu">
+        <div class="topbar">
+            <div class="container ">
+                <div class="itens">
+                    <div class="links-topo">
+                        <span>
+                            Institucional
+                        </span>
+                        <span>|</span>
+                        <a class="link-inst" href="https://iguatemi.com.br/" target="_blank">
+                            <span>
+                                Relações com Investidores
+                            </span>
+                            <img src="images/link-externo.svg" alt="Acessar site Institucional">
+                        </a>
+                    </div>
+
+                    <div class="accessibility-bar">
+                        <div class="accessibility-tools">
+                            <a href="./acessibilidade">Acessibilidade</a>
+
+                            <button id="contrastToggle" aria-label="Contraste" type="button" class="tool"
+                                data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title=""
+                                data-bs-original-title="Contraste">
+                                <span class="icon-contraste"></span>
+                            </button>
+
+                            <button id="increaseFont" aria-label="Aumentar fonte" type="button" class="tool"
+                                data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title=""
+                                data-bs-original-title="Aumentar o tamanho da fonte">
+                                <span class="icon-aumentar-fonte" accesskey="4"></span>
+                            </button>
+
+                            <button id="decreaseFont" aria-label="Diminuir fonte" type="button" class="tool"
+                                data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="bottom" title=""
+                                data-bs-original-title="Diminuir o tamanho da fonte">
+                                <span class="icon-diminuir-fonte" accesskey="5"></span>
+                            </button>
+                        </div>
+
+                        <div class="idioma-itens">
+                            <a id="hlkCulturaPtBr" accesskey="7" class="idioma-on" href="">
+                                PT
+                            </a>
+                            <a id="hlkCulturaEnUS" accesskey="8" href="">
+                                EN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<header class="header">
+    <div class="container ">
+        <div class="navbar navbar-expand-lg navbar-new-menu">
+            <div class="logo-enterprise">
+                <a href="/">
+                    <img class="logo-client" src="images/logo-client.svg" alt="PetroReconcavo">
+                    <img class="logo-client-dark" src="images/logo-client-dark.svg" alt="PetroReconcavo">
+                </a>
+
+                <button class="navbar-toggler btn-open-menu collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="images/mobile-menu-icon.svg" alt="Abrir menu mobile">
+                </button>
+            </div>
+            <div class="canais-menu">
+                <div class="container-before-mobile">
+                    <div class="container ">
+                        <div class="content-menu-mobile">
+
+                            <div class="logo-mobile">
+                                <a href="/">
+                                    <img class="logo-client" src="images/logo-client.svg" alt="PetroReconcavo">
+                                </a>
+                            </div>
+
+                            <button class="navbar-toggler btn-open-menu" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <img src="images/mobile-menu-icon.svg" alt="Abrir menu mobile">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse mobile-nav-size" id="navbarNav">
+
+                        <div class="searchbox-mobile">
+                            
+                                <div class="row">
+                                    <div class="offset-xl-0 col-xl-12">
+                                        <div class="input-group">
+                                            <input name="ctl00$ctl71" type="text" class="form-control inputBusca"
+                                                placeholder="Digite aqui sua busca">
+                                        </div>
+
+                                        <div class="search-help">
+                                            <small>
+                                                Aperte Enter para pesquisar
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                        </div>
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown mobile-accordion-item">
+                                <a class="nav-link dropdown-toggle mobile-accordion-button" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Nossas operações
+                                </a>
+                                <ul class="dropdown-menu mobile-accordion-content">
+                                    <li><a href="/quem-somos.html" class="dropdown-item">Quem Somos</a></li>
+                                    <li> <a href="/ativos-ba-rn.html" class="dropdown-item">Ativos BA e RN</a>
+                                    </li>
+                                    <li><a href="/sondas-e-servicos.html" class="dropdown-item">Sondas e
+                                            Serviços</a>
+                                    </li>
+                                    <li><a href="/gas.html" class="dropdown-item">Gás</a>
+                                    </li>
+                                    <li><a href="/nossa-historia.html" class="dropdown-item">Nossa História</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mobile-accordion-item">
+                                <a class="nav-link dropdown-toggle mobile-accordion-button" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Nossa gente
+                                </a>
+                                <ul class="dropdown-menu mobile-accordion-content">
+                                    <li>
+                                        <a href="/nosso-jeito.html" class="dropdown-item">Nosso jeito PR</a>
+                                    </li>
+                                    <li>
+                                        <a href="/vagas.html" class="dropdown-item">Vagas</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mobile-accordion-item">
+                                <a class="nav-link dropdown-toggle mobile-accordion-button" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    ESG
+                                </a>
+                                <ul class="dropdown-menu mobile-accordion-content">
+                                    <li>
+                                        <a href="/iniciativas-socioambientais.html" class="dropdown-item">Iniciativas
+                                            Socioambientais</a>
+                                    </li>
+                                    <li>
+                                        <a href="/apresentacoes.html" class="dropdown-item">Apresentações</a>
+                                    </li>
+                                    <li><a href="/relatorios-de-sustentabilidade.html" class="dropdown-item">Relatórios
+                                            de Sustentabilidade</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mobile-accordion-item">
+                                <a class="nav-link dropdown-toggle mobile-accordion-button" href="/noticias.html"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Relações com Investidores
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown mobile-accordion-item">
+                                <a class="nav-link dropdown-toggle mobile-accordion-button" href="/noticias.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Notícias
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown mobile-accordion-item">
+                                <a class="nav-link dropdown-toggle mobile-accordion-button" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fale conosco
+                                </a>
+                                <ul class="dropdown-menu mobile-accordion-content">
+                                    <li>
+                                        <a href="/ouvidoria.html" class="dropdown-item">Ouvidoria</a>
+                                    </li>
+                                    <li>
+                                        <a href="/canal-de-transparencia.html" class="dropdown-item">Canal de
+                                            Transparência</a>
+                                    </li>
+                                    <li>
+                                        <a href="/fornecedores.html" class="dropdown-item">Fornecedores</a>
+                                    </li>
+
+                                    <li><a href="/assessoria.html" class="dropdown-item">Assessoria de
+                                            Imprensa</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/informacoes.html" class="dropdown-item">Informações sobre
+                                            Tratamento de
+                                            Dados Pessoais</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="links-uteis-mobile">
+                            <p><b>Links úteis</b></p>
+                            <ul>
+                                <li>
+                                    <a href="#">A PetroReconcavo</a>
+                                </li>
+                        
+                                <li>
+                                    <a href=#">Programa de Integridade</a>
+                                </li>
+                        
+                                <li>
+                                    <a href="#">Fornecedores</a>
+                                </li>
+                        
+                                <li>
+                                    <a href="#">Projetos Sociais</a>
+                                </li>
+                        
+                                <li>
+                                    <a href="#">Comercialização de gás</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <button aria-label="Busca" type="button" class="open-searchbox" data-bs-toggle="tooltip"
+                data-bs-trigger="hover" data-bs-placement="bottom" accesskey="2" title=""
+                data-bs-original-title="Pesquisar">
+                <i class="icon-busca"></i>
+            </button>
+        </div>
+    </div>
+</header>
+    </div>
+
+    <div class="searchbox">
+        <div class="container ">
+            <div class="row">
+                <div class="offset-xl-0 col-xl-12">
+                    <div class="input-group">
+                        <input name="ctl00$ctl71" type="text" class="form-control inputBusca"
+                            placeholder="Digite aqui a sua busca">
+
+                        <div class="input-group-text">
+                            <button type="button" class="close-searchbox" aria-label="Fechar Modal de Pesquiasr">
+                                <span class="icon-exibir"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="search-help">
+                        <small>
+                            Aperte Enter para pesquisar
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="container carousel-controls">
+
+            <div class="carousel-arrows">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                </button>
+            </div>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="images/banner-01.webp" alt="Banner 01">
+                <div class="container ">
+                    <div class="carousel-caption">
+                        <h1>Pioneirismo, eficiência e alta performance em campos maduros</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="images/banner-01.webp" alt="Banner 02">
+                <div class="container ">
+                    <div class="carousel-caption">
+                        <h1>Impacto social: revitalizando campos e transformando vidas</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="images/banner-01.webp" alt="Banner 03">
+                <div class="container ">
+                    <div class="carousel-caption">
+                        <h1>Protagonista no setor: 25 anos impulsionando o onshore brasileiro</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container ">
+            <div class="row align-items-start text-operacoes" data-aos="fade-up">
+                <div class="col-lg-5 title">
+                    <h2 class="h1 pt-0">As operações da PetroReconcavo</h2>
+                </div>
+
+                <div class="col-lg-5 text">
+                    <p>Com 25 anos de trajetória, nossas operações representam a revitalização de
+                        campos maduros que impulsionam o onshore brasileiro. Operamos nos Ativos
+                        Bahia e Potiguar com 57 concessões, 3 sondas de perfuração, 15 sondas de
+                        workover e mais de 700 poços produzindo. Nossa expertise tem foco em
+                        verticalização única, excelência operacional e geração de valor para os
+                        públicos estratégicos.</p>
+
+                    <a href="#" class="btn-border">Conheça nossas operações</a>
+                </div>
+            </div>
+
+            <div class="ativos" data-aos="fade-up">
+                <div class="swiper swiper-ativos">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/ativo-bahia.webp" alt="Ativo Bahia">
+                            <div class="caption">
+                                <h3>Ativo Bahia</h3>
+                                <p>Iniciamos as operações do Ativo Bahia em 2000, por meio de um contrato de produção
+                                    com
+                                    cláusula
+                                    de riscos firmado com a
+                                    Petrobras.</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="images/ativo-potiguar.webp" alt="Ativo Potiguar">
+                            <div class="caption">
+                                <h3>Ativo Potiguar</h3>
+                                <p>O Ativo Potiguar iniciou suas operações em 2019, com a conclusão da primeira
+                                    transação do
+                                    Projeto
+                                    Topázio, parte do
+                                    programa de desinvestimento de ativos terrestres da Petrobras iniciado em 2016.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-arrows">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray pt-146">
+        <div class="container">
+            <h2 class="h1 text-center mt-80" data-aos="fade-up">Números da Companhia</h2>
+
+            <div class="numeros-companhia">
+                <div class="item" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="counter">25</h3>
+                    <span>anos de história</span>
+                </div>
+
+                <div class="item" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="counter">57</h3>
+                    <span>concessões</span>
+                </div>
+
+                <div class="item" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="counter">3</h3>
+                    <span>sondas de perfuração</span>
+                </div>
+
+                <div class="item" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="counter">15</h3>
+                    <span>sondas de workover</span>
+                </div>
+
+                <div class="item" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="counter">+700</h3>
+                    <span>poços produzidos</span>
+                </div>
+
+                <div class="item" data-aos="fade-up" data-aos-delay="600">
+                    <h3 class="counter">27</h3>
+                    <span>kboe de produção</span>
+                </div>
+            </div>
+
+            <div class="btn-center">
+                <a href="#" class="btn-green">Acesse o site de <b>RI</b></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-0 section-esg-integridade">
+
+        <div class="tabs-area" data-aos="fade-up">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="iniciativas-tab" data-bs-toggle="tab"
+                        data-bs-target="#iniciativas-tab-pane" type="button" role="tab"
+                        aria-controls="iniciativas-tab-pane" data-image="iniciativas" aria-selected="true">Iniciativas
+                        ESG</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="integridade-tab" data-bs-toggle="tab"
+                        data-bs-target="#integridade-tab-pane" type="button" role="tab"
+                        aria-controls="integridade-tab-pane" data-image="integridade" aria-selected="false">Programa de
+                        Integridade</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="iniciativas-tab-pane" role="tabpanel"
+                    aria-labelledby="iniciativas-tab" tabindex="0">
+
+                    <h2>Nosso cuidado com as questões ambientais</h2>
+
+                    <p>Nossa Companhia segue um modelo de inovação e qualidade que promove o impacto social e positivo
+                        nas regiões onde
+                        atuamos. Geramos investimento, emprego e renda no Nordeste e desenvolvemos as comunidades com
+                        projetos socioambientais
+                        que melhoram a vida da população.</p>
+
+                    <a href="#" class="btn-yellow">Confira nossas iniciativas ESG</a>
+
+                </div>
+                <div class="tab-pane fade" id="integridade-tab-pane" role="tabpanel" aria-labelledby="integridade-tab"
+                    tabindex="0">
+
+                    <h2>Programa de Integridade</h2>
+                    <p>Nosso Programa de Integridade consiste em um conjunto de mecanismos e procedimentos internos de
+                        integridade, auditoria e
+                        incentivo à denúncia de possíveis irregularidades. Nossas atividades são conduzidas com base no
+                        Código de Ética e
+                        Conduta.</p>
+
+                    <a href="#" class="btn-yellow">Conheça mais sobre o programa</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="imagens">
+            <img class="active" src="images/iniciativas-esg.webp" alt="Iniciativas ESG" data-image-id="iniciativas">
+            <img src="images/programa-integridade.webp" alt="Programa de Integridade" data-image-id="integridade">
+        </div>
+
+    </section>
+
+    <section class="bg-white pb-0">
+        <div class="container">
+            <div class="destaques-home" data-aos="fade-up">
+                <div class="item destaque-fornecedor">
+
+                    <div class="content">
+                        <h3>Estamos em constante desenvolvimento, com equipamentos qualificados, buscando parcerias
+                            e
+                            inovações.</h3>
+                        <p>Essa atuação abre oportunidades para fornecedores já cadastrados e
+                            empresas que desejam oferecer seus serviços e produtos.</p>
+                        <a href="#">Quero ser um fornecedor</a>
+                    </div>
+
+                    <img src="images/bg-fornecedor.webp" alt="Quero ser um fornecedor">
+                </div>
+
+                <div class="item destaque-fornecedor">
+
+                    <img src="images/bg-talento.webp" alt="Quero ser um talento">
+
+                    <div class="content">
+                        <h3>Quer trabalhar na PetroReconcavo?</h3>
+                        <p>Conheça as nossas oportunidades e se cadastre na nossa página de talentos.</p>
+                        <a href="#">Quero ser um talento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Últimas notícias</h2>
+
+            <div class="box-noticias" data-aos="fade-up">
+                <div class="item">
+                    <img src="images/img-noticia.webp" alt="Notícia">
+                    <div class="content">
+                        <div class="text">
+                            <h3 class="h6">Título</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget risus mauris. Nam id
+                                eros
+                                volutpat, pellentesque
+                                felis et, faucibus erat.</p>
+                        </div>
+                        <a href="#">Leia mais</a>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <img src="images/img-noticia.webp" alt="Notícia">
+                    <div class="content">
+                        <div class="text">
+                            <h3 class="h6">Título</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget risus mauris. Nam id
+                                eros
+                                volutpat, pellentesque
+                                felis et, faucibus erat.</p>
+                        </div>
+                        <a href="#">Leia mais</a>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <img src="images/img-noticia.webp" alt="Notícia">
+                    <div class="content">
+                        <div class="text">
+                            <h3 class="h6">Título</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget risus mauris. Nam id
+                                eros
+                                volutpat, pellentesque
+                                felis et, faucibus erat.</p>
+                        </div>
+                        <a href="#">Leia mais</a>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <img src="images/img-noticia.webp" alt="Notícia">
+                    <div class="content">
+                        <div class="text">
+                            <h3 class="h6">Título</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget risus mauris. Nam id
+                                eros
+                                volutpat, pellentesque
+                                felis et, faucibus erat.</p>
+                        </div>
+                        <a href="#">Leia mais</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="btn-center">
+                <a href="#" class="btn-gray">Veja todas as notícias</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bg-green">
+
+            <div class="ouvipetro">
+                <div class="text">
+                    <span>Tem algum sugestão ou crítica?</span>
+                    <h2>OuviPetro</h2>
+                </div>
+                <div class="text">
+                    <span>Ligue:</span>
+                    <h2>0800 071 8028</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="item">
+                        <div class="endereco">
+                            <span>Salvador - Hangar</span>
+
+                            <p>(escritório corporativo)<br>
+                                Av. Luís Viana, Hangar Business Park, Torre 3, 4˚ andar.<br>
+                                Salvador - Bahia - Brasil<br>
+                                CEP: 41500-300<br>
+                                Telefone (71) 3635-0296</p>
+                        </div>
+
+                        <div class="endereco">
+                            <span>Estação São Roque</span>
+
+                            <p>(Base Operacional Distrito Recôncavo)<br>
+                                Estrada do Vinte Mil, Km 3,5<br>
+                                Estação São Roque Mata de São João - Bahia - Brasil<br>
+                                CEP: 48280-000<br>
+                                Telefone: (71) 3635-0200</p>
+                        </div>
+
+                        <div class="endereco">
+                            <span>Estação São Roque</span>
+
+                            <p>(Administrativo Distrito Potiguar)<br>
+                                Avenida Lauro Monte, 1010, Abolição - Mossoró/RN<br>
+                                CEP: 59619-000</p>
+                        </div>
+
+                        <div class="endereco">
+                            <span>Estação Riacho da Forquilha</span>
+
+                            <p>(Base Operacional Distrito Potiguar)<br>
+                                Campo Riacho da Forquilha, Área Rural.<br>
+                                Apodi - RN<br>
+                                CEP: 59700-000</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span>Links úteis</span>
+
+                        <ul>
+                            <li>
+                                <a href="#">A PetroReconcavo</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Programa de Integridade</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Fornecedores</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Projetos Sociais</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Comercialização de gás</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <p>PetroReconcavo © Todos os direitos reservados 2025</p>
+
+                    <ul class="links-meio">
+                        <li>
+                            <a href="#">Relações com Investidores</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Código de Conduta</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Termos e Condições</a>
+                        </li>
+                    </ul>
+
+                    <div class="selo-prisma">
+                        <img src="images/logo-prisma.png" alt="Prisma">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container ">
+                <div class="content">
+                    <div class="iframe-cotacoes">
+                        <p>Preço do gás</p>
+
+                        <div class="item">
+                            <span class="title">Guamaré (RN):</span>
+                            <img src="images/icon-gas.svg" alt="Preço do gás">
+                            <span class="data">09/07</span>
+                            <span><b>R$ 2.828,01</b></span>
+                            <span>(LCT)</span>
+                        </div>
+
+                        <div class="item">
+                            <span class="title">Guamaré (RN):</span>
+                            <img src="images/icon-gas.svg" alt="Preço do gás">
+                            <span class="data">09/07</span>
+                            <span><b>R$ 2.828,01</b></span>
+                            <span>(LPA)</span>
+                        </div>
+                    </div>
+
+                    <div class="tabela-cotacoes">
+                        <a href="#">Confira a tabela completa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/carrosel.js"></script>
+    <script defer src="vendor/bootstrap.bundle.min.js"></script>
+    <script defer src="vendor/counterup.js"></script>
+    <script defer src="vendor/menuFixo.js"></script>
+    <script defer src="vendor/aos.js"></script>
+    <script defer src="vendor/basic-table.min.js"></script>
+    <script defer src="vendor/slick.min.js"></script>
+    <script defer src="js/zoomScroll.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/Master.js"></script>
+</body>
+
+</html>
