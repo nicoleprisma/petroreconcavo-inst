@@ -242,6 +242,12 @@
       padding: 80px 64px;
     }
 
+     @media (max-width: 767px) {
+      width: 100vw;
+      align-items: center;
+      padding: 80px 24px;
+    }
+
     .nav-tabs {
       background-color: var(--primary-01-var-07);
       border: 1px solid var(--text-primary-01-var-07);
@@ -289,6 +295,10 @@
       h2 {
         margin: 32px 0 48px 0;
         color: var(--text-grey-scale-00);
+
+         @media (max-width: 767px) {
+     text-align: center;
+    }
       }
 
       p {
@@ -1251,7 +1261,7 @@
       opacity: 1;
 
       span {
-        background-image: url(/images/arrow-interno.svg);
+        background-image: url(../images/arrow-interno.svg);
         height: 33px;
         width: 23px;
       }
@@ -1585,7 +1595,7 @@
 }
 
 .bg-endereco {
-  background-image: url(/images/bg-endereco.jpg);
+  background-image: url(../images/bg-endereco.jpg);
 
   img {
     position: absolute;

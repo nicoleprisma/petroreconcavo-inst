@@ -202,14 +202,14 @@ img-comparison-slider {
 .swiper-arrows {
   .swiper-button-prev {
     &:after {
-      content: url(/images/arrow-slide.svg);
+      content: url(../images/arrow-slide.svg);
       transform: rotate(180deg);
     }
   }
 
   .swiper-button-next {
     &:after {
-      content: url(/images/arrow-slide.svg);
+      content: url(../images/arrow-slide.svg);
     }
   }
 }
@@ -219,6 +219,6 @@ img-comparison-slider {
   justify-content: center;
 }
 
-.radius-8 {
+.radius-8 { 
   border-radius: 8px;
 }
