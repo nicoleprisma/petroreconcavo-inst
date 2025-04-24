@@ -1,5 +1,5 @@
 footer {
-  padding: 192px 0 66px 0;
+  padding: 150px 0 66px 0;
   background-color: var(--primary-01-default);
   position: relative;
   margin-top: 80px;
@@ -10,21 +10,38 @@ footer {
 
   .ouvipetro {
     position: absolute;
-    top: -70px;
-    width: 85%;
+    top: -230px;
+    width: 98%;
     height: 144px;
-    padding: 40px 124px;
+    padding: 40px 0;
     background-size: cover;
-    border-radius: 0 16px 16px 0;
+    border-radius: 16px;
     background-image: url(../images/img-ouvipetro.webp);
     display: flex;
     gap: 64px;
     background-position: center;
 
+    &:before {
+      content: "";
+      background-color: var(--primary-02-default);
+      height: 144px;
+      width: 800px;
+      left: -700px;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      display: block;
+
+      @media (max-width: 767px) {
+        left: -800px;
+        height: 100%;
+      }
+    }
+
     @media (max-width: 767px) {
       width: 100%;
       border-radius: 0;
-      padding: 40px 0 40px 24px;
+      padding: 40px 0;
       flex-direction: column;
       gap: 16px;
       height: max-content;
@@ -33,9 +50,9 @@ footer {
     .text {
       position: relative;
 
-       @media (max-width: 767px) {
-      position: unset;
-    }
+      @media (max-width: 767px) {
+        position: unset;
+      }
 
       &:first-of-type {
         &:after {
