@@ -23,7 +23,7 @@ footer {
 
     &:before {
       content: "";
-      background-color: var(--primary-02-default);
+      background-color: #f7cc4a;
       height: 144px;
       width: 800px;
       left: -700px;
@@ -73,6 +73,7 @@ footer {
 
       h2 {
         margin: 0;
+        color: var(--text-grey-scale-10);
       }
     }
   }
