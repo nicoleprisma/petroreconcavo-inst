@@ -826,7 +826,7 @@
     top: 0;
     width: 2px;
     background-color: transparent;
-    border: 1px dotted var(--text-grey-scale-05);
+   border: 1px dotted var(--text-grey-scale-04);
     height: 100%;
     transition: height 0.3s ease;
     z-index: -1;
@@ -872,7 +872,7 @@
       top: 50%;
       width: 9px;
       height: 9px;
-      background: var(--text-grey-scale-05);
+      background: var(--text-grey-scale-04);
       border-radius: 50%;
       z-index: 1;
       transition: background 0.3s;
