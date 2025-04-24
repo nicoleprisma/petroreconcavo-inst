@@ -153,6 +153,13 @@ footer {
       text-decoration: none;
     }
 
+    a { 
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     .links-meio {
       padding: 0;
       display: flex;
