@@ -47,6 +47,10 @@ footer {
           display: block;
           top: 0;
           right: -32px;
+
+          @media (max-width: 992px) {
+            content: none;
+          }
         }
       }
 
