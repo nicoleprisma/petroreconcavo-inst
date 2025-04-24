@@ -1,3 +1,19 @@
+body {
+  &.open-menu {
+    &::after {
+      content: "";
+      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 190;
+    }
+  }
+}
+
 .navbar {
   @media (max-width: 992px) {
     padding-bottom: 40px;
