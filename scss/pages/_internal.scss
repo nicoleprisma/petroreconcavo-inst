@@ -238,11 +238,10 @@
     justify-content: center;
 
     @media (max-width: 1366px) {
-      align-items: center;
       padding: 80px 64px;
     }
 
-     @media (max-width: 767px) {
+     @media (max-width: 991px) {
       width: 100vw;
       align-items: center;
       padding: 80px 24px;
@@ -313,6 +312,10 @@
     height: 726px;
 
     @media (max-width: 1366px) {
+      height: 100%;
+    }
+
+     @media (max-width: 991px) {
       height: 500px;
     }
 
