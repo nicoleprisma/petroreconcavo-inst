@@ -349,16 +349,16 @@
 
   &:before {
     content: "";
-    display: block;
-    background-color: var(--text-grey-scale-00);
-    height: 72px;
-    width: 472px;
-    position: absolute;
-    left: -300px;
-    z-index: -1;
+  display: block;
+  background-color: var(--text-grey-scale-00);
+  height: 72px;
+  width: 1000px;
+  position: absolute;
+  left: -800px;
+  z-index: -1;
   }
 
-  .open-searchbox {
+  .open-searchbox { 
     border-radius: 30px;
     border: none;
     padding: 8px;
