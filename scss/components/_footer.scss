@@ -24,7 +24,7 @@ footer {
     @media (max-width: 767px) {
       width: 100%;
       border-radius: 0;
-      padding: 40px 24px;
+      padding: 40px 0 40px 24px;
       flex-direction: column;
       gap: 16px;
       height: max-content;
@@ -32,6 +32,10 @@ footer {
 
     .text {
       position: relative;
+
+       @media (max-width: 767px) {
+      position: unset;
+    }
 
       &:first-of-type {
         &:after {
