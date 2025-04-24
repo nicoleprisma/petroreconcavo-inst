@@ -201,7 +201,7 @@
       line-height: 116%;
       color: var(--text-primary-01-var-06);
 
-      @media (max-width: 992px) {
+      @media (max-width: 1366px) {
         font-size: 4.5rem !important;
       }
 
@@ -826,7 +826,7 @@
     top: 0;
     width: 2px;
     background-color: transparent;
-   border: 1px dotted var(--text-grey-scale-04);
+    border: 1px dotted var(--text-grey-scale-04);
     height: 100%;
     transition: height 0.3s ease;
     z-index: -1;
@@ -1534,15 +1534,17 @@
 }
 
 .box-ouvipetro {
-  position: relative;
+  position: sticky;
   padding: 40px;
   overflow: hidden;
   display: flex;
   align-items: center;
   border-radius: 8px;
+  top: 15vh;
 
   @media (max-width: 992px) {
     margin-top: 32px;
+    position: relative;
   }
 
   &:after {
